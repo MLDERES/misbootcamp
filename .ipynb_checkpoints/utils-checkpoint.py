@@ -35,21 +35,24 @@ def hide_toggle(toggle_text='Toggle show/hide', for_next=False):
     return HTML(html)
 
 from IPython.core.display import display, HTML
-def toggle_code(toggle_text = 'Show/Hide', next = False):
-    toggle_code_str = f'<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="{toggle_text}"></form>'
-    
+toggle_code_str = '''
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Toggle Code"></form>
+'''
 
-    toggle_code_prepare_str = '''
-        <script>
-        function code_toggle() {
-            if ($('div.cell.code_cell.rendered.selected div.input').css('display')!='none'){
-                $('div.cell.code_cell.rendered.selected div.input').hide();
-            } else {
-                $('div.cell.code_cell.rendered.selected div.input').show();
-            }
+toggle_code_prepare_str = '''
+    <script>
+    function code_toggle() {
+        if ($('div.cell.code_cell.rendered.selected div.input').css('display')!='none'){
+            $('div.cell.code_cell.rendered.selected div.input').hide();
+        } else {
+            $('div.cell.code_cell.rendered.selected div.input').show();
         }
-        </script>
+    }
+    </script>
 
-    '''
-    
-    display(HTML(toggle_code_prepare_str + toggle_code_str))
+'''
+
+display(HTML(toggle_code_prepare_str + toggle_code_str))
+
+def toggle_code():
+    display(HTML(toggle_code_str))
