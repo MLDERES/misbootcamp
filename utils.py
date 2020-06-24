@@ -53,3 +53,8 @@ def toggle_code(toggle_text = 'Show/Hide', next = False):
     '''
     
     display(HTML(toggle_code_prepare_str + toggle_code_str))
+
+def prev_next(prev_link='', next_link=''):
+    previous_button = f'<button name="prev">Previous</button>'
+    next_button = f'<button name="next">next</button>'
+    display(HTML(previous_button+next_button))
