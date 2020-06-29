@@ -10,5 +10,5 @@ Absolutely the best way to become a proficient programmer is to practice solving
 
 Learning Resources
 ------------------
-[Automate the boring stuff with Python](https://automatetheboringstuff.com/)
+[Automate the boring stuff with Python](https://automatetheboringstuff.com/)  
 [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
