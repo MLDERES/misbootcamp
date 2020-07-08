@@ -139,3 +139,5 @@ cython_debug/
 
 # Removing the vs code Dev stuff
 .devcontainer/
+# Also removing the answers from the public repo
+coding challenges-answers.ipynb
