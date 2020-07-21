@@ -7,6 +7,7 @@ This guide is broken up into several notebooks which are intended to be complete
 
 Absolutely the best way to become a proficient programmer is to practice solving problems.  The reason this is so important is because you will learn to think like a programmer, so don't skip the practices and if you get stuck, you are welcome to open the answers notebook and see one way to solve the challenge.  Once you've worked through these challenges, head over to [Codewars](http://www.codewars.com) and try working on a few puzzles there.
 
+The best place to start is at the beginning, [click here](./notebooks/1\-Introduction.ipynb) to get started.
 
 Learning Resources
 ------------------
